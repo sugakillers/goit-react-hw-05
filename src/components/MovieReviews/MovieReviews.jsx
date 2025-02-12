@@ -49,4 +49,4 @@ const MovieReviews = () => {
   );
 };
 
-export default MovieReviews;
+export default MovieReviews; 
