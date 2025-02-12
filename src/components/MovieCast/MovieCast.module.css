@@ -1,0 +1,15 @@
+.castList {
+    margin-top: 36px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .listItem {
+    width: calc((100% - 90px) / 7);
+  }
+
+  .listItem img {
+    width: 100%;
+    margin-bottom: 12px;
+  }

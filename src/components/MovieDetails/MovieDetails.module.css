@@ -1,0 +1,43 @@
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .poster {
+    border-radius: 4px;
+    height: 100%;
+    margin-inline: auto;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    font-style: oblique;
+  }
+  
+  .year {
+    display: inline-block;
+    margin-left: 16px;
+  }
+  
+  .tagline {
+    font-style: oblique;
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .text {
+    font-size: 16px;
+  }
+  
