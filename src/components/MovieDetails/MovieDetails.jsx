@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
-import { getMoviesById } from '../../apiService/movies';
+import { getMoviesById } from '../../ApiService/movies';
 import css from './MovieDetails.module.css';
 export const defaultImg = 'https://storage.googleapis.com/pod_public/1300/175426.jpg';
 
@@ -13,7 +13,7 @@ const MovieDetails = () => {
   const [loader, setLoader] = useState(false);
 
   useEffect(() => {
-    const getMovie = async () => {
+    const getMovies = async () => {
       setLoader(true);
       try {
         const details = await getMoviesById(movieId);
@@ -24,7 +24,7 @@ const MovieDetails = () => {
         setLoader(false);
       }
     };
-    getMovie();
+    getMovies();
   }, [movieId]);
 
   const {
